@@ -7,8 +7,8 @@ func add(x, y int) int {
 }
 
 func swap(x, y int) (a, b int) {
-	a := y
-	b := x
+	a = y
+	b = x
 	return
 }
 
