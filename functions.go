@@ -17,4 +17,8 @@ func main() {
 	fmt.Println()
 	a, b := swap(2, 3)
 	fmt.Printf("swap 2 and 3 returns %d and %d", a, b)
+	fmt.Println()
+	var c, python, java = true, false, "Hell no!"
+
+	fmt.Println(c, python, java)
 }
