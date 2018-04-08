@@ -6,8 +6,10 @@ func add(x, y int) int {
 	return x + y
 }
 
-func swap(x, y int) (int, int) {
-	return y, x
+func swap(x, y int) (a, b int) {
+	a := y
+	b := x
+	return
 }
 
 func main() {
