@@ -23,9 +23,18 @@ func main() {
 	var c, python, java = true, false, "Hell no!"
 	fmt.Println(c, python, java)
 	fmt.Println(greeting)
-	var sum = 0
+	var sum int = 0
 	for i := 0; i < 5; i++ {
 		sum += i
+	}
+	fmt.Printf("The sum is %d", sum)
+	fmt.Println()
+	sum = 0
+	for {
+		sum++
+		if sum > 100 {
+			break
+		}
 	}
 	fmt.Printf("The sum is %d", sum)
 	fmt.Println()
