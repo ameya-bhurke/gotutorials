@@ -9,9 +9,13 @@ var post int = 1
 // a function that returns an int.
 func fibonacci() func() int {
 	return func() int {
-		pre, post = post, pre+post
+		defer incrementPrePost()
 		return pre
 	}
+}
+
+func incrementPrePost() {
+	pre, post = post, pre+post
 }
 
 func main() {
